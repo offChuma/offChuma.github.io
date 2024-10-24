@@ -11,16 +11,29 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="scripts/script.js" defer></script>
 
     <title>My Resume</title>
   </head>
   <body>
+    <div class="bar">
+      <button id="burgermenu-toggle">{ }</button>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#about">Про мене</a></li>
+          <li><a href="#educations">Освіта</a></li>
+          <li><a href="#experiences">Досвід</a></li>
+          <li><a href="#skills">Навички</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="page">
+      <div class="placeholder"></div>
       <section class="introduction">
         <div class="intro">
           <h1>
-            <span>Ruslan</span>
-            <span>Sokolchenko</span>
+            <span>Руслан</span>
+            <span>Сокольченко</span>
           </h1>
           <h2>Creative Designer</h2>
           <p class="text">
@@ -39,23 +52,26 @@
         <div class="leftside">
           <address class="contact-info">
             <div class="info-wrapper">
-              <h5 class="title">DOB</h5>
-              <span class="text">01/01/1992</span>
+              <h5 class="title">Дата народження</h5>
+              <span class="text">19/08/2005</span>
             </div>
             <div class="info-wrapper">
-              <h5 class="title">Address:</h5>
+              <h5 class="title">Адреса:</h5>
+              <span class="text">Київ, Україна</span>
+            </div>
+            <div class="info-wrapper">
+              <h5 class="title">Мій гітхаб:</h5>
               <span class="text">
-                1234 Elm Street, Apt 56 Springfield, IL 62704
+                <a
+                  href="https://github.com/offChuma"
+                  aria-label="Visit Ruslan Sokolchenko's GitHub"
+                >
+                  GitHub
+                </a>
               </span>
             </div>
             <div class="info-wrapper">
-              <h5 class="title">Phone:</h5>
-              <span class="text">
-                <a href="tel:+13125559876">(555) 123-4567</a>
-              </span>
-            </div>
-            <div class="info-wrapper">
-              <h5 class="title">Email:</h5>
+              <h5 class="title">Пошта:</h5>
               <span class="text">
                 <a
                   href="mailto:ruslan.sokolchenko@gmail.com"
@@ -66,7 +82,7 @@
               </span>
             </div>
             <div class="info-wrapper">
-              <h5 class="title">Website:</h5>
+              <h5 class="title">Вебсайт:</h5>
               <span class="text">
                 <a
                   href="www.ruslandesignstudio.com"
@@ -79,9 +95,9 @@
             </div>
           </address>
 
-          <div class="about">
+          <div class="about" id="about">
             <div class="section-title">
-              <h2 class>About me</h2>
+              <h2 class>Про мене</h2>
             </div>
             <p class="text">
               Талановитий дизайнер із понад 7-річним досвідом у розробці
@@ -93,15 +109,15 @@
           </div>
           <div class="sign">
             <svg>
-              <use xlink:href="./images/icons.svg#strongman"></use>
+              <use xlink:href="./images/icons.svg#sokolchenko"></use>
             </svg>
           </div>
         </div>
 
         <div class="rightside">
-          <section class="educations">
+          <section class="educations" id="educations">
             <div class="section-title">
-              <h2>Education</h2>
+              <h2>Освіта</h2>
             </div>
             <div class="educations-wrapper">
               <div class="education">
@@ -132,10 +148,9 @@
               </div>
             </div>
           </section>
-
-          <section class="experiences">
+          <section class="experiences" id="experiences">
             <div class="section-title">
-              <h2>Experience</h2>
+              <h2>Досвід</h2>
             </div>
             <div class="experiences-wrapper">
               <div class="experience">
@@ -195,9 +210,9 @@
             </div>
           </section>
 
-          <section class="skills">
+          <section class="skills" id="skills">
             <div class="section-title">
-              <h2>My Skills</h2>
+              <h2>Навички</h2>
             </div>
             <div class="icons">
               <div class="photoshop">
@@ -230,10 +245,12 @@
                   <div class="circle"></div>
                 </div>
               </div>
-              <div class="octanerender">
+              <div class="blender">
                 <div class="icon">
                   <svg>
-                    <use xlink:href="./images/icons.svg#octanerender (1)"></use>
+                    <use
+                      xlink:href="./images/icons.svg#blender-svgrepo-com"
+                    ></use>
                   </svg>
                 </div>
                 <div class="rating">

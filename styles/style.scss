@@ -65,6 +65,73 @@ h3 {
   }
 }
 
+.placeholder {
+  display: none;
+  @media (max-width: 480px) {
+    display: block;
+    height: 3rem;
+    background-color: red;
+  }
+}
+
+.bar {
+  display: none;
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    position: fixed;
+    background-color: var(--section-color);
+    z-index: 2;
+
+    button {
+      width: 3rem;
+      margin-left: auto;
+      border: none;
+      background-color: inherit;
+      color: var(--white-color);
+      &:hover {
+        background-color: #212121;
+      }
+    }
+  }
+}
+
+.nav {
+  @media (max-width: 480px) {
+    display: none;
+    ul {
+      display: none;
+    }
+    &.display {
+      display: flex;
+      background-color: var(--section-color);
+      position: absolute;
+      top: 3rem;
+      right: 0;
+      padding: 1rem;
+      ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+
+        li {
+          height: auto;
+        }
+        a {
+          display: block;
+          padding: 1rem;
+          text-decoration: none;
+          color: var(--white-color);
+          &:hover {
+            background-color: #212121;
+          }
+        }
+      }
+    }
+  }
+}
+
 .page {
   width: 100%;
   background-color: var(--page-color);
